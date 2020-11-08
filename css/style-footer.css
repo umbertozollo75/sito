@@ -1,0 +1,33 @@
+.footer-container {
+  width: 100%;
+}
+
+.moto-widget-text-content {
+  padding:0 1px
+}
+.moto-widget-text-content:after {
+  content:"";
+  display:table;
+  clear:both
+}
+.moto-text_system_11 {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'PT Sans', sans-serif;
+  color: #969696;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0px;
+}
+.moto-text_system_11 a {
+  color: #969696;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+}
+.moto-text_system_11 a:hover {
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
