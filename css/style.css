@@ -1,12 +1,21 @@
+@charset "UTF-8";
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 body {
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #434f53;
+  margin: 0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #434f53;
 }
 
 .page-head {
-  position: relative;
+    position: relative;
+    background: url("./image/bg-pattern.jpg") repeat;
 }
 .header-full-height {
   min-height: 100vh;
@@ -18,6 +27,8 @@ body {
   right: 0;
   left: 0;
   background: transparent;
+}
+.rd-navbar-wrap {
   z-index: 3;
 }
 .rd-navbar-inner {
@@ -68,7 +79,7 @@ body {
   color: #000000;
 }
 .moto-color_custom5 {
-    color: #ffca0b;
+  color: #ffca0b;
 }
 .btn .btn-social-icon {
   width: 35px;
@@ -118,12 +129,12 @@ body {
   height: 100%;
 }
 .swiper-container {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .carousel-item .img-fluid {

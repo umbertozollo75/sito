@@ -1,3 +1,28 @@
+.section-sm-78 {
+  padding-top: 78px;
+  padding-bottom: 78px;
+}
+.text-center {
+  text-align: center;
+}
+.shell {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 300px;
+  max-width: 1200px;
+}
+.range {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.rights {
+  color: #989b9b;
+  margin-top: 41px;
+  letter-spacing: .02em;
+}
+
 .footer-container {
   width: 100%;
 }
