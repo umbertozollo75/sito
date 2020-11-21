@@ -1,24 +1,32 @@
 @charset "UTF-8";
 
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 14px;
-  line-height: 1.42857143;
-  color: #434f53;
-  display: block;
 }
-.wrapper {
+[role="button"] {
+  cursor: pointer;
 }
 
+/**
+  *
+  *
+  *
+ **/
+
 .header-head {
+  position: relative;
+  background: url("../images/bg-pattern.jpg") repeat;
 }
-.header-container {
+.header-full-height {
+  min-height: 100vh;
+  height: calc(100vh - 56px);
+  background: transparent;
+}
+.rd-navbar-wrap {
   position: absolute;
   top: 0;
   right: 0;
@@ -52,7 +60,6 @@ body {
 .rd-navbar-panel-right {
   text-align: right;
 }
-
 .moto-widget-text-content {
   padding:0 1px
 }
@@ -119,15 +126,20 @@ body {
   color: #ffffff
 }
 
+/**
+  *
+  *
+  *
+ **/
+
 .section-head {
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-/*  height: 100%;*/
-  border:solid;
-  color: #900;
+  height: 100%;
 }
 .section-container {
   height: 100%;
@@ -137,7 +149,6 @@ body {
   overflow: hidden;
   z-index: 1;
 }
-
 .jcarousel {
   position: relative;
   overflow: hidden;
@@ -153,28 +164,26 @@ body {
   float: left;
 }
 
+/**
+  *
+  *
+  *
+ **/
+
 .footer-head {
 }
 .footer-container {
-  border:solid;
-  color: #900;
 }
 
-/*@media (max-width: 1920px) {
-  .carousel-item .img-fluid {
-    width:90%;
-    height:90%;
-  }
-}*/
+/**
+  *
+  *
+  *
+ **/
+
 @media (max-width: 767px) {
-  .carousel-item .img-fluid {
-    width:80%;
-    height:80%;
-  }
+
 }
 @media (max-width: 479px) {
-  .carousel-item .img-fluid {
-    width:50%;
-    height:50%;
-  }
+
 }
