@@ -11,25 +11,29 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #434f53;
+  display: block;
+}
+#wrapper {
+  width: 100%;
 }
 
-.page-head {
-    position: relative;
-    background: url("./image/bg-pattern.jpg") repeat;
+.header-head {
+  background: url("./image/bg-pattern.jpg") repeat;
 }
-.header-full-height {
-  min-height: 100vh;
-  height: calc(100vh - 56px);
-}
-.header-full-height .rd-navbar-wrap {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+.header-container {
   background: transparent;
+  /*  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;*/
 }
-.rd-navbar-wrap {
-  z-index: 3;
+.rd-navbar {
+  display: none;
+}
+.rd-navbar-static {
+  display: block;
 }
 .rd-navbar-inner {
   position: relative;
@@ -119,27 +123,42 @@ body {
   color: #ffffff
 }
 
-.swiper-absolute {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.section-head {
+  background: url("./image/bg-pattern.jpg") repeat;
 }
-.swiper-container {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+.section-container {
+  background: transparent;
+  /*  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;*/
 }
 
-.carousel-item .img-fluid {
-  width:100%;
-  height:100%;
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+}
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jcarousel li {
+  float: left;
+}
+
+
+
+
+.footer-head {
+  background: url("./image/bg-pattern.jpg") repeat;
+}
+.footer-container {
+  background: transparent;
 }
 
 /*@media (max-width: 1920px) {
