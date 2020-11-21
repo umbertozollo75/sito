@@ -27,7 +27,7 @@
 
     <header class="header-head header-full-height">
       <div class="rd-navbar-wrap" style="height: 116px;">
-        <nav class="rd-navbar rd-navbar-static">
+        <div class="rd-navbar rd-navbar-static">
           <div class="row rd-navbar-inner">
 
             <div class="col-4 rd-navbar-panel rd-navbar-panel-left">
@@ -57,38 +57,40 @@
                 </li>
               </ul>
             </div>
-            <!--
-                          <div class="col-4 rd-navbar-panel rd-navbar-panel-right">
-                            <ul class="">
-                              <li class="active">
-                                <a href="#">HOME</a>
-                              </li>
-                              <li class="">
-                                <a href="#">PORTFOLIO</a>
-                                <ul class="">
-                                  <li>
-                                    <a href="#">2020</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">2019</a>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>
-                                <a href="#">NEWS</a>
-                              </li>
-                              <li>
-                                <a href="#">CONTACTS</a>
-                              </li>
-                            </ul>
-                          </div>
-            -->
+
+            <div class="col-4 rd-navbar-panel rd-navbar-panel-right">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PORTFOLIO
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">2020</a>
+                        <a class="dropdown-item" href="#">2019</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACTS</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
           </div>
-        </nav>
+        </div>
       </div>
       <div class="section-head">
         <div class="section-container">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -96,40 +98,40 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="./image/home-slider01.jpg" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>...</h5>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">GIORNATA GLAMOUR</h3>
                   <p>...</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="./image/home-slider02.jpg" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>...</h5>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">GIORNATA GLAMOUR</h3>
                   <p>...</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="./image/home-slider03.jpg" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>...</h5>
-                  <p>...</p>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">GIRO DELL'APPENNINO 2020</h3>
+                  <p>Genova</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="./image/home-slider04.jpg" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>...</h5>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">GIRO DEL PIEMONTE 2019</h3>
                   <p>...</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="./image/home-slider05.jpg" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>...</h5>
-                  <p>...</p>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">GIRO DEL PIEMONTE 2019</h3>
+                  <p>Oropa (BI)</p>
                 </div>
               </div>
             </div>
