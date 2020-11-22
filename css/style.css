@@ -1,24 +1,39 @@
 @charset "UTF-8";
 
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #434f53;
-  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #d4d7d7;
 }
-.wrapper {
+[role="button"] {
+  cursor: pointer;
+}
+[class*="font"] body {
+    font-family: PT Sans,Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: normal;
+    word-spacing: normal;
 }
 
+/**
+  *
+  *
+  *
+ **/
+
 .header-head {
+  position: relative;
+  background: url("../image/bg-pattern.jpg") repeat;
 }
-.header-container {
+.header-full-height {
+  min-height: 100vh;
+  height: calc(100vh - 56px);
+  background: transparent;
+}
+.rd-navbar-wrap {
   position: absolute;
   top: 0;
   right: 0;
@@ -38,7 +53,7 @@ body {
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
-  background: transparent;
+  /*background: transparent;*/
 }
 .rd-navbar-panel {
   padding: 33px 0;
@@ -50,18 +65,17 @@ body {
   text-align: center;
 }
 .rd-navbar-panel-right {
+  float: right;
   text-align: right;
 }
-
 .moto-widget-text-content {
   padding:0 1px
 }
 .moto-text_system_1 {
-  text-decoration: none;
-  font-weight: 700;
-  font-style: normal;
-  color: #000000;
   font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d4d7d7;
   font-size: 25px;
   line-height: 1.1;
   letter-spacing: 0px;
@@ -70,16 +84,19 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
-  color: #000000;
+  color: #d4d7d7;
 }
 .moto-text_system_1 a:hover {
+  color: #d4d7d7;
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
-  color: #000000;
 }
 .moto-color_custom5 {
-  color: #ffca0b;
+  color: #2caae1;
+}
+.moto-color1_1 {
+  color: #d4d7d7;
 }
 .btn .btn-social-icon {
   width: 35px;
@@ -100,7 +117,7 @@ body {
 }
 .btn-outline-twitter:hover {
   background: #2caae1;
-  color: #ffffff
+  color: #fff
 }
 .btn-outline-instagram {
   border: 1px solid #dc4a38;
@@ -108,26 +125,73 @@ body {
 }
 .btn-outline-instagram:hover {
   background: #e52d27;
-  color: #ffffff
+  color: #fff
 }
 .btn-outline-500px {
-  border: 1px solid #000000;
+  border: 1px solid #000;
   color: #3b579d
 }
 .btn-outline-500px:hover {
-  background: #000000;
-  color: #ffffff
+  background: #000;
+  color: #fff
 }
+
+.moto-widget-menu-item {
+  text-align: left;
+  padding: 0 0 5px 0;
+}
+.moto-widget-menu-link {
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  padding: 10px 14px;
+}
+.navbar-custom {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #d4d7d7;
+}
+.navbar-custom .navbar-nav .nav-link {
+  padding: 1em 1em;
+}
+.navbar-custom .nav-item.active .nav-link, 
+.navbar-custom .nav-item:hover .nav-link {
+  color: #d4d7d7;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: #2caae1;
+}
+.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
+  color: #d4d7d7;
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: transparent;
+}
+.navbar-custom .dropdown-item {
+  color: #d4d7d7;
+}
+.navbar-custom .dropdown-item:hover, .navbar-custom .dropdown-item:focus {
+  color: #d4d7d7;
+  background-color: #2caae1;
+}
+
+/**
+  *
+  *
+  *
+ **/
 
 .section-head {
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-/*  height: 100%;*/
-  border:solid;
-  color: #900;
+  height: 100%;
 }
 .section-container {
   height: 100%;
@@ -137,7 +201,6 @@ body {
   overflow: hidden;
   z-index: 1;
 }
-
 .jcarousel {
   position: relative;
   overflow: hidden;
@@ -153,28 +216,26 @@ body {
   float: left;
 }
 
+/**
+  *
+  *
+  *
+ **/
+
 .footer-head {
 }
 .footer-container {
-  border:solid;
-  color: #900;
 }
 
-/*@media (max-width: 1920px) {
-  .carousel-item .img-fluid {
-    width:90%;
-    height:90%;
-  }
-}*/
+/**
+  *
+  *
+  *
+ **/
+
 @media (max-width: 767px) {
-  .carousel-item .img-fluid {
-    width:80%;
-    height:80%;
-  }
+
 }
 @media (max-width: 479px) {
-  .carousel-item .img-fluid {
-    width:50%;
-    height:50%;
-  }
+
 }
