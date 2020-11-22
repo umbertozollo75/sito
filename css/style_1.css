@@ -4,8 +4,11 @@ html {
 }
 body {
   margin: 0;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 14px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #d4d7d7;
 }
 [role="button"] {
   cursor: pointer;
@@ -58,17 +61,17 @@ body {
   text-align: center;
 }
 .rd-navbar-panel-right {
+  float: right;
   text-align: right;
 }
 .moto-widget-text-content {
   padding:0 1px
 }
 .moto-text_system_1 {
-  text-decoration: none;
-  font-weight: 700;
-  font-style: normal;
-  color: #000000;
   font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d4d7d7;
   font-size: 25px;
   line-height: 1.1;
   letter-spacing: 0px;
@@ -77,16 +80,19 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
-  color: #000000;
+  color: #d4d7d7;
 }
 .moto-text_system_1 a:hover {
+  color: #d4d7d7;
   text-decoration: none;
   font-weight: 700;
   font-style: normal;
-  color: #000000;
 }
 .moto-color_custom5 {
   color: #ffca0b;
+}
+.moto-color1_1 {
+  color: #d4d7d7;
 }
 .btn .btn-social-icon {
   width: 35px;
@@ -107,7 +113,7 @@ body {
 }
 .btn-outline-twitter:hover {
   background: #2caae1;
-  color: #ffffff
+  color: #fff
 }
 .btn-outline-instagram {
   border: 1px solid #dc4a38;
@@ -115,15 +121,24 @@ body {
 }
 .btn-outline-instagram:hover {
   background: #e52d27;
-  color: #ffffff
+  color: #fff
 }
 .btn-outline-500px {
-  border: 1px solid #000000;
+  border: 1px solid #000;
   color: #3b579d
 }
 .btn-outline-500px:hover {
-  background: #000000;
-  color: #ffffff
+  background: #000;
+  color: #fff
+}
+.navbar {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 700;
+}
+.active a {
+  color: #ffca0b;
 }
 
 /**
