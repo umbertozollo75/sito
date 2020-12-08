@@ -1,11 +1,17 @@
 @charset "UTF-8";
 
-.section-sm-78 {
-  padding-top: 78px;
-  padding-bottom: 78px;
+.section-sm {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .shell {
   margin-right: auto;

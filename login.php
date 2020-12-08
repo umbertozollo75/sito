@@ -19,7 +19,6 @@
 
     <!-- custom css-->
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
-    <link type="text/css" rel="stylesheet" href="./css/style-footer.css" />
     <!-- custom js -->   
     <script type="text/javascript" src="./js/custom.js"></script>
   </head>
@@ -33,7 +32,7 @@
             <div class="col-4 rd-navbar-panel rd-navbar-panel-left">
               <div class="moto-widget-text-content">
                 <p class="moto-text_system_1">
-                  <a class="" href="index.html" >Umberto <span class="moto-color_custom5">ZOLLO</span></a>​
+                  <a class="" href="index.php" >Umberto <span class="moto-color_custom5">ZOLLO</span></a>​
                   &nbsp;
                   <span class="moto-color1_1">
                     <span style="font-size:12px;">PHOTOGRAPHY</span>​
@@ -64,7 +63,7 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDropdown">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html"> Home</a>
+                      <a class="nav-link" href="index.php"> Home</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portfolio</a>
@@ -74,13 +73,13 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="news.html"> News</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#"> Contatti</a>
+                      <a class="nav-link" href="news.php"> News</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                      <a class="nav-link" href="contatti.php"> Contatti</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
                     </li>
                   </ul>
                 </div>
@@ -92,25 +91,45 @@
       </div>
     </header>
 
-    <main class="page-content">&nbsp;</main>
-
-    <footer class="footer-head">
-      <div class="footer-container">
-        <section class="section-sm-78 text-center">
-          <div class="shell">
-            <div class="range text-center">
-              <div class="cell-xs-12">
-                <hr>
-                <p class="rights">
-                  <strong><span style="font-size:14px;">UMBERTO ZOLLO&nbsp;</span></strong> 
-                  © 2020.&nbsp;&nbsp;<a href="/privacy-policy/" class="moto-link">PRIVACY POLICY​</a>​
-                </p>
-              </div>
+    <main class="page-content">
+      <section class="section-login">
+        <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4 login-box">
+            <!--            <div class="login-key">
+                          <i class="fa fa-key" aria-hidden="true"></i>
+                        </div>-->
+            <div class="login-title">
+              ADMIN PANEL
+            </div>
+            <div class="login-form">
+              <form id="login-form" method="post" action="" role="form">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_username">Username *</label>
+                    <input id="form_username" type="text" name="username" class="form-control" placeholder="Please enter your username *" required="required" data-error="Username is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_password">Passwor *</label>
+                    <input id="form_password" type="text" name="password" class="form-control" placeholder="Please enter your password *" required="required" data-error="password is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 text-left">
+                    <button type="submit" class="btn btn-outline-primary">Login</button>
+                  </div>
+              </form>
             </div>
           </div>
-        </section>
-      </div>
-    </footer>
+          <div class="col-lg-4"></div>
+        </div>
+      </section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    </main>
+
+    <?php include 'footer.php';?>
 
   </body>
 </html>

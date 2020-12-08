@@ -19,7 +19,6 @@
 
     <!-- custom css-->
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
-    <link type="text/css" rel="stylesheet" href="./css/style-footer.css" />
     <!-- custom js -->   
     <script type="text/javascript" src="./js/custom.js"></script>
   </head>
@@ -33,7 +32,7 @@
             <div class="col-4 rd-navbar-panel rd-navbar-panel-left">
               <div class="moto-widget-text-content">
                 <p class="moto-text_system_1">
-                  <a class="" href="home.html" >Umberto <span class="moto-color_custom5">ZOLLO</span></a>​
+                  <a class="" href="home.php" >Umberto <span class="moto-color_custom5">ZOLLO</span></a>​
                   &nbsp;
                   <span class="moto-color1_1">
                     <span style="font-size:12px;">PHOTOGRAPHY</span>​
@@ -64,7 +63,7 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDropdown">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html"> Home</a>
+                      <a class="nav-link" href="index.php"> Home</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portfolio</a>
@@ -77,10 +76,10 @@
                       <a class="nav-link" href="#"> News</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contatti.html"> Contatti</a>
+                      <a class="nav-link" href="contatti.php"> Contatti</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                      <a class="nav-link" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
                     </li>
                   </ul>
                 </div>
@@ -181,29 +180,13 @@
             </div>
           </div>
           <div class="col-md-4">
-
+            
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="footer-head">
-      <div class="footer-container">
-        <section class="section-sm-78 text-center">
-          <div class="shell">
-            <div class="range text-center">
-              <div class="cell-xs-12">
-                <hr>
-                <p class="rights">
-                  <strong><span style="font-size:14px;">UMBERTO ZOLLO&nbsp;</span></strong> 
-                  © 2020.&nbsp;&nbsp;<a href="/privacy-policy/" class="moto-link">PRIVACY POLICY​</a>​
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </footer>
+    <?php include 'footer.php';?>
 
   </body>
 </html>

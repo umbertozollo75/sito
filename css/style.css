@@ -7,14 +7,14 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  background-color: #f8f8f8;
+  /*background-color: #f8f8f8;*/
   color: #d4d7d7;
 }
 [role="button"] {
   cursor: pointer;
 }
 [class*="font"] body {
-  font-family: PT Sans,Roboto, Helvetica, Arial, sans-serif;
+  font-family: Roboto, PT Sans, Helvetica, Arial, sans-serif;
   letter-spacing: normal;
   word-spacing: normal;
 }
@@ -284,10 +284,23 @@ body {
   word-wrap: normal !important;
 }
 .post-date {
-    float: left;
-    margin: 30px 5px 0 0;
-    text-transform: uppercase;
-    color: #a9aeba;
+  float: left;
+  margin: 30px 5px 0 0;
+  text-transform: uppercase;
+  color: #a9aeba;
+}
+/**
+  * CONTACTS
+ **/
+.section-contacts {
+  max-width: 100%;
+  padding-top: 161px;
+}
+.contacts-box {
+  height: auto;
+  text-align: center;
+  /*box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
+  /*padding: 10px;*/
 }
 /**
   * LOGIN
@@ -299,7 +312,7 @@ body {
 .login-box {
   height: auto;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /*box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
 }
 .login-key {
   height: 100px;
@@ -396,6 +409,29 @@ input[type=password] {
 .footer-head {
 }
 .footer-container {
+  width: 100%;
+}
+.section-sm {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.range {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.rights {
+  color: #989b9b;
+  margin-top: 41px;
+  letter-spacing: .02em;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 
 /**

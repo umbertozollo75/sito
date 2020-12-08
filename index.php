@@ -19,7 +19,6 @@
 
     <!-- custom css-->
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
-    <link type="text/css" rel="stylesheet" href="./css/style-footer.css" />
     <!-- custom js -->   
     <script type="text/javascript" src="./js/custom.js"></script>
   </head>
@@ -74,13 +73,13 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="news.html"> News</a>
+                      <a class="nav-link" href="news.php"> News</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contatti.html"> Contatti</a>
+                      <a class="nav-link" href="contatti.php"> Contatti</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                      <a class="nav-link" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
                     </li>
                   </ul>
                 </div>
@@ -150,23 +149,42 @@
       </div>
     </header>
 
-    <footer class="footer-head">
+<!--    <footer class="footer-head">
       <div class="footer-container">
-        <section class="section-sm-78 text-center">
-          <div class="shell">
-            <div class="range text-center">
-              <div class="cell-xs-12">
-                <hr>
-                <p class="rights">
-                  <strong><span style="font-size:14px;">UMBERTO ZOLLO&nbsp;</span></strong> 
-                  © Copyright 2020. All rights reserved.
-                </p>
-              </div>
+        <section class="section-sm text-center">
+          <div class="cell-xs-3">&nbsp;</div>
+          <div class="cell-xs-4">
+            <div class="range">
+              <hr>
+              <p class="rights">
+                <strong><span style="font-size:14px;">UMBERTO ZOLLO&nbsp;</span></strong> 
+                © Copyright <?php echo date("Y"); ?>. All rights reserved.
+              </p>
             </div>
           </div>
+          <div class="cell-xs-4">
+            <div class="range">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                </li>
+                <li class="list-inline-item">
+                  <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                </li>
+                <li class="list-inline-item">
+                  <button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                </li>
+                <li class="list-inline-item">
+                  <button type="button" class="btn btn-social-icon btn-outline-500px"><i class="fa fa-500px" aria-hidden="true"></i></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell-xs-1">&nbsp;</div>
         </section>
       </div>
-    </footer>
+    </footer>-->
+    <?php include 'footer.php';?>
 
   </body>
 </html>

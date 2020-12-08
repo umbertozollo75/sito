@@ -19,7 +19,6 @@
 
     <!-- custom css-->
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
-    <link type="text/css" rel="stylesheet" href="./css/style-footer.css" />
     <!-- custom js -->   
     <script type="text/javascript" src="./js/custom.js"></script>
   </head>
@@ -33,7 +32,7 @@
             <div class="col-4 rd-navbar-panel rd-navbar-panel-left">
               <div class="moto-widget-text-content">
                 <p class="moto-text_system_1">
-                  <a class="" href="index.html" >Umberto <span class="moto-color_custom5">ZOLLO</span></a>​
+                  <a class="" href="index.php" >Umberto <span class="moto-color_custom5">ZOLLO</span></a>​
                   &nbsp;
                   <span class="moto-color1_1">
                     <span style="font-size:12px;">PHOTOGRAPHY</span>​
@@ -64,7 +63,7 @@
                 <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDropdown">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html"> Home</a>
+                      <a class="nav-link" href="index.php"> Home</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Portfolio</a>
@@ -74,13 +73,13 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="news.html"> News</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contatti.html"> Contatti</a>
+                      <a class="nav-link" href="news.php"> News</a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                      <a class="nav-link" href="#"> Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
                     </li>
                   </ul>
                 </div>
@@ -93,57 +92,88 @@
     </header>
 
     <main class="page-content">
-      <section class="section-login">
+      <section class="section-contacts">
         <div class="row">
-          <div class="col-lg-4"></div>
-          <div class="col-lg-4 login-box">
-            <div class="login-key">
-              <i class="fa fa-key" aria-hidden="true"></i>
+          <div class="col-lg-12 text-center">
+            <h1>Contact information</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-2">
+            <div class="" data-widget="text" data-preset="default" data-spacing="aasa">
+              <div class="">
+                <p class="moto-text_system_7">Contact info</p></div>
             </div>
-            <div class="login-title">
-              ADMIN PANEL
-            </div>
-            <div class="login-form">
-              <form>
-                <div class="form-group">
-                  <label class="form-control-label">USERNAME</label>
-                  <input type="text" class="form-control">
+            <div data-animation="fadeInLeft" class="" data-widget="text" data-preset="default" data-spacing="aasa" style="visibility: visible; animation-name: fadeInLeft;">
+              <div class="">
+                <p class="moto-text_system_11"><span class="moto-color2_3"><strong>I would like always to stay in touch with you!</strong></span></p>
+              </div>
+              <div data-animation="fadeInLeft" class="" data-widget="text" data-preset="default" data-spacing="aasa" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="">
+                  <p class="">Please send me your personal questions and wishes. Also, you can order a fotoshoot by sending me an email, and discuss the details. Thank you for choosing me!<br></p>
                 </div>
-                <div class="form-group">
-                  <label class="form-control-label">PASSWORD</label>
-                  <input type="password" class="form-control">
-                </div>
-                <div class="login-text-error">
-                  <p></p> <!-- message error -->
-                </div>
-                <div class="login-button">
-                  <button type="submit" class="btn btn-outline-primary">LOGIN</button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4"></div>
+
+          <div class="col-lg-4">
+            <form id="contact-form" method="post" action="" role="form">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_name">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname">Lastname *</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_phone">Phone</label>
+                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required data-error="Please,leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-left">
+                    <button type="submit" class="btn btn-outline-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">&nbsp;</div>
         </div>
       </section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     </main>
 
-    <footer class="footer-head">
-      <div class="footer-container">
-        <section class="section-sm-78 text-center">
-          <div class="shell">
-            <div class="range text-center">
-              <div class="cell-xs-12">
-                <hr>
-                <p class="rights">
-                  <strong><span style="font-size:14px;">UMBERTO ZOLLO&nbsp;</span></strong> 
-                  © 2020.&nbsp;&nbsp;<a href="/privacy-policy/" class="moto-link">PRIVACY POLICY​</a>​
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </footer>
+    <?php include 'footer.php';?>
 
   </body>
 </html>
