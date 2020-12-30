@@ -149,41 +149,6 @@
       </div>
     </header>
 
-<!--    <footer class="footer-head">
-      <div class="footer-container">
-        <section class="section-sm text-center">
-          <div class="cell-xs-3">&nbsp;</div>
-          <div class="cell-xs-4">
-            <div class="range">
-              <hr>
-              <p class="rights">
-                <strong><span style="font-size:14px;">UMBERTO ZOLLO&nbsp;</span></strong> 
-                © Copyright <?php echo date("Y"); ?>. All rights reserved.
-              </p>
-            </div>
-          </div>
-          <div class="cell-xs-4">
-            <div class="range">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-500px"><i class="fa fa-500px" aria-hidden="true"></i></button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="cell-xs-1">&nbsp;</div>
-        </section>
-      </div>
-    </footer>-->
     <?php include 'footer.php';?>
 
   </body>
