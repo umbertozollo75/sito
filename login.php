@@ -42,20 +42,7 @@
             </div>
 
             <div class="col-4 rd-navbar-panel rd-navbar-panel-center">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-500px"><i class="fa fa-500px" aria-hidden="true"></i></button>
-                </li>
-              </ul>
+              <?php include 'social.php'; ?>
             </div>
 
             <div class="col-4 rd-navbar-panel rd-navbar-panel-right">
@@ -107,20 +94,20 @@
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="form_username">Username *</label>
-                    <input id="form_username" type="text" name="username" class="form-control" placeholder="Please enter your username *" required="required" data-error="Username is required.">
+                    <input id="form_username" type="text" name="username" class="form-control" placeholder="Inserisci il tuo username *" required="required" data-error="L'username è richiesto.">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label for="form_password">Passwor *</label>
-                    <input id="form_password" type="text" name="password" class="form-control" placeholder="Please enter your password *" required="required" data-error="password is required.">
+                    <label for="form_password">Password *</label>
+                    <input id="form_password" type="text" name="password" class="form-control" placeholder="Inserisci la tua password *" required="required" data-error="La password è richiesta.">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12 text-left">
-                    <button type="submit" class="btn btn-outline-primary">Login</button>
-                  </div>
+                  <button type="submit" class="btn btn-outline-primary">Login</button>
+                </div>
               </form>
             </div>
           </div>
@@ -129,7 +116,7 @@
       </section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     </main>
 
-    <?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>
 
   </body>
 </html>

@@ -21,6 +21,15 @@
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
     <!-- custom js -->   
     <script type="text/javascript" src="./js/custom.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdYPDAaAAAAAIuQ_ze3X9u9p30jP6i_Dkk-1sJi"></script>
+    <script>
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LdYPDAaAAAAAIuQ_ze3X9u9p30jP6i_Dkk-1sJi', {action: 'contact'}).then(function (token) {
+          var recaptchaResponse = document.getElementById('recaptchaResponse');
+          recaptchaResponse.value = token;
+        });
+      });
+    </script>
   </head>
   <body class="home">
 
@@ -42,20 +51,7 @@
             </div>
 
             <div class="col-4 rd-navbar-panel rd-navbar-panel-center">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-500px"><i class="fa fa-500px" aria-hidden="true"></i></button>
-                </li>
-              </ul>
+              <?php include 'social.php'; ?>
             </div>
 
             <div class="col-4 rd-navbar-panel rd-navbar-panel-right">
@@ -100,72 +96,59 @@
         </div>
         <div class="row">
           <div class="col-lg-2"></div>
-          <div class="col-lg-2">
-            <div class="" data-widget="text" data-preset="default" data-spacing="aasa">
-              <div class="">
-                <p class="moto-text_system_7">Contact info</p></div>
-            </div>
-            <div data-animation="fadeInLeft" class="" data-widget="text" data-preset="default" data-spacing="aasa" style="visibility: visible; animation-name: fadeInLeft;">
-              <div class="">
-                <p class="moto-text_system_11"><span class="moto-color2_3"><strong>I would like always to stay in touch with you!</strong></span></p>
-              </div>
-              <div data-animation="fadeInLeft" class="" data-widget="text" data-preset="default" data-spacing="aasa" style="visibility: visible; animation-name: fadeInLeft;">
-                <div class="">
-                  <p class="">Please send me your personal questions and wishes. Also, you can order a fotoshoot by sending me an email, and discuss the details. Thank you for choosing me!<br></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <div class="col-lg-2"></div>
           <div class="col-lg-4">
-            <form id="contact-form" method="post" action="" role="form">
-              <div class="messages"></div>
-              <div class="controls">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="form_name">Firstname *</label>
-                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="form_lastname">Lastname *</label>
-                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                      <div class="help-block with-errors"></div>
-                    </div>
+            <div class=""></div>
+            <form id="contact-form" method="post" style="margin:10px 0;">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">Nome *</label>
+                    <input id="form_firstname" type="text" name="name" class="form-control" placeholder="Inserisci il tuo nome *" required="required" data-error="Il nome è richiesto.">
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="form_email">Email *</label>
-                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="form_phone">Phone</label>
-                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <label for="form_message">Message *</label>
-                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required data-error="Please,leave us a message."></textarea>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 text-left">
-                    <button type="submit" class="btn btn-outline-primary">Send message</button>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Cognome *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Inserisci il tuo cognome *" required="required" data-error="Il cognome è richiesto.">
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Inserisci la tua mail *" required="required" data-error="Una mail valida è richiesta.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_phone">Telefono</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Inserisci il tuo numero di telefono">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Messaggio *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Messaggio per me *" rows="4" required data-error="Per favore, lasciami un messaggio."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-left">
+                  <button type="submit" id="submit-button" class="btn btn-outline-primary">Spedisci messaggio</button>
+                </div>
+              </div>
+
+              <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
             </form>
           </div>
           <div class="col-lg-4">&nbsp;</div>
@@ -173,7 +156,7 @@
       </section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     </main>
 
-    <?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>
 
   </body>
 </html>

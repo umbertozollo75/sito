@@ -42,20 +42,7 @@
             </div>
 
             <div class="col-4 rd-navbar-panel rd-navbar-panel-center">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
-                </li>
-                <li class="list-inline-item">
-                  <button type="button" class="btn btn-social-icon btn-outline-500px"><i class="fa fa-500px" aria-hidden="true"></i></button>
-                </li>
-              </ul>
+              <?php include 'social.php'; ?>
             </div>
 
             <div class="col-4 rd-navbar-panel rd-navbar-panel-right">
