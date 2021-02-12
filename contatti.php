@@ -146,9 +146,7 @@
                   <button type="submit" id="submit-button" class="btn btn-outline-primary">Spedisci messaggio</button>
                 </div>
               </div>
-
               <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-
             </form>
           </div>
           <div class="col-lg-4">&nbsp;</div>
