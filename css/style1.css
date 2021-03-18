@@ -16,33 +16,33 @@ body {
 [class*="font"] body {
   font-family: Roboto, PT Sans, Helvetica, Arial, sans-serif;
   letter-spacing: normal;
-  word-spacing: normal;
+  wouz-spacing: normal;
+}
+a {
+  text-decoration: none;
 }
 
 /**
   *
+  *
+  *
  **/
-.page-head {
-  position: relative;
+.header-head {
 }
-.header-full-height {
-  min-height: 100vh;
-  height: 1px;
-  background: transparent;
+.header-container {
+  width: 100%;
 }
-@media (min-width: 768px) {
-  .header-full-height {
-    min-height: 600px;
-  }
-}
-.header-full-height .rd-navbar-wrap {
+.header-container-index {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 2;
 }
-.rd-navbar-inner {
+.uz-navbar-wrap-new {
+  background: url("../image/bg-pattern.jpg") repeat;
+}
+.uz-navbar-inner {
   position: relative;
   width: 100%;
   padding-left: 30px;
@@ -50,30 +50,47 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.rd-navbar-panel {
+.uz-navbar-panel {
   padding: 25px 0;
 }
-.rd-navbar-panel-left {
+.uz-navbar-panel-left {
   float: left;
   text-align: left;
   width: 30%;
 }
-.rd-navbar-panel-center {
+.uz-navbar-panel-center {
   float: left;
   text-align: center;
   width: 20%;
 }
-.rd-navbar-panel-right {
+.uz-navbar-panel-right {
   float: right;
   text-align: right;
   width: 50%;
 }
-
-.btn .btn-social-icon {
-  width: 25px;
-  height: 25px;
-  padding: 0
+.brand {
+  font-family: "Montserrat Alternates", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
 }
+.brand a {
+  font-style: normal;
+  color: #fff;
+}
+.brand p {
+  font-style: normal;
+  color: #fff;
+}
+.brand-logo {
+  float: left;
+}
+.brand-name {
+  float: left;
+  padding-left: 10px;
+}
+/**
+  *
+ **/
 .icon-default {
   color: #fff;
 }
@@ -104,7 +121,175 @@ body {
 .ico500px:hover {
   color: #fff;
 }
+/**
+  *
+ **/
+.navbar-custom {
+  font-family: "Montserrat Alternates", Helvetica, Arial, sans-serif;
+  font-style:normal;
+  font-weight:bold;
+  color: #fff;
+}
+.navbar-custom .navbar-nav .nav-link {
+  padding: 1em 1em;
+}
+.navbar-custom .nav-item.active .nav-link, 
+.navbar-custom .nav-item:hover .nav-link {
+  color: #fff;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: #2caae1;
+}
+.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
+  color: #fff;
+}
+.navbar-custom .dropdown-menu {
+  background-color: transparent;
+}
+.navbar-custom .dropdown-item {
+  color: #fff;
+}
+.navbar-custom .dropdown-item:hover, .navbar-custom .dropdown-item:focus {
+  color: #fff;
+  background-color: #2caae1;
+}
 
+/**
+  *
+  *
+  *
+ **/
+.page-head {
+}
+.page-container {
+  width: 100%;
+}
+.page-container-index {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+}
+/**
+  * CONTACTS
+ **/
+.uz-contact-panel {
+  position: relative;
+  width: 100%;
+}
+.uz-contact-colsx { 
+  float: left; 
+  width: 30%; 
+}
+.uz-contact-colcx { 
+  margin-left: 30%; 
+  margin-right: 30%;  
+}
+.uz-contact-coldx { 
+  float: right; 
+  width: 30%; 
+}
+.uz-contact-left {
+  text-align: left;
+}
+.uz-contact-center {
+  text-align: center;
+}
+.uz-contact-right {
+  text-align: right;
+}
+/**
+  * LOGIN
+ **/
+.uz-login-panel {
+  position: relative;
+  width: 100%;
+}
+.uz-login-colsx { 
+  float: left; 
+  width: 30%; 
+}
+.uz-login-colcx { 
+  margin-left: 30%; 
+  margin-right: 30%;  
+}
+.uz-login-coldx { 
+  float: right; 
+  width: 30%; 
+}
+.uz-login-left {
+  text-align: left;
+}
+.uz-login-center {
+  text-align: center;
+}
+.uz-login-right {
+  text-align: right;
+}
+
+/**
+  *
+  *
+  *
+ **/
+.footer-head {
+}
+.footer-container {
+  width: 100%;
+}
+.uz-footer-panel {
+  position: relative;
+  width: 100%;
+}
+.uz-footer-colsx { 
+  float: left; 
+  width: 30%; 
+}
+.uz-footer-colcx { 
+  margin-left: 30%; 
+  margin-right: 30%;  
+}
+.uz-footer-coldx { 
+  float: right; 
+  width: 30%; 
+}
+.uz-footer-left {
+  text-align: left;
+}
+.uz-footer-center {
+  text-align: center;
+}
+.uz-footer-right {
+  text-align: right;
+}
+.rights {
+  color: #000;
+  margin-top: 20px;
+  letter-spacing: .02em;
+}
+.rights a {
+  color: #000;
+  margin-top: 20px;
+  letter-spacing: .02em;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+/**
+ *
+**/
+.btn .btn-social-icon {
+  width: 25px;
+  height: 25px;
+  padding: 0
+}
 .btn-outline-facebook {
   border: 1px solid #3b579d;
   color: #3b579d;
@@ -136,69 +321,4 @@ body {
 .btn-outline-500px:hover {
   background: #000;
   color: #fff;
-}
-
-.navbar-custom {
-  font-family: "Montserrat Alternates", Helvetica, Arial, sans-serif;
-  font-style:normal;
-  font-weight:bold;
-  color: #d4d7d7;
-}
-.navbar-custom .navbar-nav .nav-link {
-  padding: 1em 1em;
-}
-.navbar-custom .nav-item.active .nav-link, 
-.navbar-custom .nav-item:hover .nav-link {
-  color: #d4d7d7;
-}
-.navbar-custom .navbar-nav .nav-link {
-  color: #2caae1;
-}
-.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
-  color: #d4d7d7;
-}
-.navbar-custom .dropdown-menu {
-  background-color: transparent;
-}
-.navbar-custom .dropdown-item {
-  color: #d4d7d7;
-}
-.navbar-custom .dropdown-item:hover, .navbar-custom .dropdown-item:focus {
-  color: #d4d7d7;
-  background-color: #2caae1;
-}
-
-/**
-  *
- **/
-.section-head {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.section-container {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.jcarousel {
-  position: relative;
-  overflow: hidden;
-}
-.jcarousel ul {
-  width: 1903px;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.jcarousel li {
-  float: left;
 }

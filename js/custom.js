@@ -27,24 +27,24 @@ $(document).ready(function () {
     event.preventDefault();
     $('#alert').text('Processing...').fadeIn(0);
     $.ajax({
-      url: 'inviamail.php',
-      type: 'post',
+      url: './script/inviamail.php',
+      type: "POST",
       data: $('#contact-form').serializeArray(),
       dataType: 'json',
-      success: function(_response){
-        var error = _response.error;
-        var success = _response.success;
-        if(error !== "") {
-          $('#alert').html(error);
+      success: function(response) {
+        console.log(response);
+        
+        var error = response.codErrore;
+        if (error == "1") {
+          $('#alert').html("Error!!!");
         } else {
-          $('#alert').html(success);
           $('#submit-button').remove();
         }
       },
-      error: function(jqXhr, json, errorThrown){
-        var error = jqXhr.responseText;
-        $('#alert').html(error);
-      }
+      error: function(error){
+         console.log("Error:");
+         console.log(error);
+    }
     });
   });
   

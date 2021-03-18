@@ -95,8 +95,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-2"></div>
+          <div class="col-lg-4"></div>
           <div class="col-lg-4">
             <div class=""></div>
             <form id="contact-form" method="post" style="margin:10px 0;">
