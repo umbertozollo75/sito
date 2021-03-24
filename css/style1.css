@@ -3,28 +3,28 @@
 html {
 }
 body {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  /*background-color: #f8f8f8;*/
-  color: #d4d7d7;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #434f53;;
 }
 [role="button"] {
   cursor: pointer;
 }
-[class*="font"] body {
-  font-family: Roboto, PT Sans, Helvetica, Arial, sans-serif;
-  letter-spacing: normal;
-  wouz-spacing: normal;
+
+.uz-left {
+  text-align: left;
 }
-a {
-  text-decoration: none;
+.uz-center {
+  text-align: center;
+}
+.uz-right {
+  text-align: right;
 }
 
 /**
   *
-  *
+  * HEADER
   *
  **/
 .header-head {
@@ -32,62 +32,110 @@ a {
 .header-container {
   width: 100%;
 }
-.header-container-index {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-}
-.uz-navbar-wrap-new {
+.uz-navbar-wrap {
   background: url("../image/bg-pattern.jpg") repeat;
 }
-.uz-navbar-inner {
+.uz-navbar-panel {
   position: relative;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
 }
-.uz-navbar-panel {
-  padding: 25px 0;
+.uz-navbar-colsx {
+  float: left; 
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.uz-navbar-panel-left {
-  float: left;
-  text-align: left;
-  width: 30%;
+.uz-navbar-colcx {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.uz-navbar-panel-center {
-  float: left;
-  text-align: center;
-  width: 20%;
-}
-.uz-navbar-panel-right {
-  float: right;
-  text-align: right;
-  width: 50%;
+.uz-navbar-coldx { 
+  float: right; 
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .brand {
-  font-family: "Montserrat Alternates", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+  padding: 20px 0 0 0;
 }
 .brand a {
+  text-decoration: none; 
+  color:#000; 
+  font-family: "PT Sans", sans-serif; 
+  font-size: 25px; 
+  font-style: normal; 
+  font-weight: 700; 
+  letter-spacing: normal; 
+  line-height: 27.5px;
+}
+.brand-subname-01 {
+  color: #ffca0b;
+}
+.brand-subname_02 {
+  font-family: "PT Sans", sans-serif; 
+  font-size: 11px; 
+  font-style: normal; 
+  font-weight: 400; 
+  letter-spacing: normal; 
+  line-height: 12.1px; 
+  color: #969696;
+}
+
+/**
+  *
+ **/
+.menu {
+  background-color: transparent;
+  border-style: solid;
+  border-color: #c0c0c0;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 20px 0 0 0;
+}
+.navbar.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+.navbar.navbar-default .navbar-nav > li > a {
+  color: #969696;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   font-style: normal;
-  color: #fff;
+  padding: 0 15px 0 15px;
 }
-.brand p {
-  font-style: normal;
-  color: #fff;
+.navbar.navbar-default .navbar-nav > li > a:hover,
+.navbar.navbar-default .navbar-nav > li > a:focus {
+  color: #000;
+  text-decoration: none;
 }
-.brand-logo {
-  float: left;
+.navbar.navbar-default .navbar-nav > .active > a,
+.navbar.navbar-default .navbar-nav > .active > a:focus,
+.navbar.navbar-default .navbar-nav > .active > a:hover {
+  color: #ffca0b;
 }
-.brand-name {
-  float: left;
-  padding-left: 10px;
+.navbar.navbar-default .navbar-toggle .icon-bar,
+.navbar.navbar-default .navbar-toggle .icon-bar:hover {
+
 }
+.navbar.navbar-default .navbar-toggle,
+.navbar.navbar-default .navbar-toggle:focus,
+.navbar.navbar-default .navbar-toggle:hover {
+
+}
+
 /**
   *
  **/
@@ -101,57 +149,30 @@ a {
   color: #3b579d;
 }
 .icoFacebook:hover {
-  color: #fff;
+  color: #ffca0b;
 }
 .icoTwitter {
   color: #2caae1;
 }
 .icoTwitter:hover {
-  color: #fff;
+  color: #ffca0b;
 }
 .icoInstagram {
   color: #dc4a38;
 }
 .icoInstagram:hover {
-  color: #fff;
+  color: #ffca0b;
 }
 .ico500px {
   color: #3b579d;
 }
 .ico500px:hover {
-  color: #fff;
+  color: #ffca0b;
 }
-/**
-  *
- **/
-.navbar-custom {
-  font-family: "Montserrat Alternates", Helvetica, Arial, sans-serif;
-  font-style:normal;
-  font-weight:bold;
-  color: #fff;
-}
-.navbar-custom .navbar-nav .nav-link {
-  padding: 1em 1em;
-}
-.navbar-custom .nav-item.active .nav-link, 
-.navbar-custom .nav-item:hover .nav-link {
-  color: #fff;
-}
-.navbar-custom .navbar-nav .nav-link {
-  color: #2caae1;
-}
-.navbar-custom .nav-item.active .nav-link, .navbar-custom .nav-item:hover .nav-link {
-  color: #fff;
-}
-.navbar-custom .dropdown-menu {
-  background-color: transparent;
-}
-.navbar-custom .dropdown-item {
-  color: #fff;
-}
-.navbar-custom .dropdown-item:hover, .navbar-custom .dropdown-item:focus {
-  color: #fff;
-  background-color: #2caae1;
+@media(max-width: 600px) {
+  #socialBar {
+    visibility: hidden;
+  }
 }
 
 /**
@@ -163,13 +184,6 @@ a {
 }
 .page-container {
   width: 100%;
-}
-.page-container-index {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  z-index: 1;
 }
 /**
   * CONTACTS
@@ -190,15 +204,6 @@ a {
   float: right; 
   width: 30%; 
 }
-.uz-contact-left {
-  text-align: left;
-}
-.uz-contact-center {
-  text-align: center;
-}
-.uz-contact-right {
-  text-align: right;
-}
 /**
   * LOGIN
  **/
@@ -218,15 +223,6 @@ a {
   float: right; 
   width: 30%; 
 }
-.uz-login-left {
-  text-align: left;
-}
-.uz-login-center {
-  text-align: center;
-}
-.uz-login-right {
-  text-align: right;
-}
 
 /**
   *
@@ -241,46 +237,29 @@ a {
 .uz-footer-panel {
   position: relative;
   width: 100%;
+  padding-top: 20px;
+  display: flex;
 }
 .uz-footer-colsx { 
   float: left; 
-  width: 30%; 
+  flex: 1; 
+  padding-left: 30px;
 }
 .uz-footer-colcx { 
-  margin-left: 30%; 
-  margin-right: 30%;  
+  flex: 1; 
 }
 .uz-footer-coldx { 
   float: right; 
-  width: 30%; 
-}
-.uz-footer-left {
-  text-align: left;
-}
-.uz-footer-center {
-  text-align: center;
-}
-.uz-footer-right {
-  text-align: right;
+  flex: 1;
+  padding-right: 30px;
 }
 .rights {
-  color: #000;
-  margin-top: 20px;
+  color: #969696;
   letter-spacing: .02em;
 }
 .rights a {
-  color: #000;
-  margin-top: 20px;
+  color: #969696;
   letter-spacing: .02em;
-}
-.text-left {
-  text-align: left;
-}
-.text-center {
-  text-align: center;
-}
-.text-right {
-  text-align: right;
 }
 /**
  *

@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
       
       //Recipients
       $mail->setFrom($userEmail, 'Mailer');
-      $mail->addAddress('info@ingumbertozollo.it', 'Umberto Zollo Web Site');     // Add a recipient
+      $mail->addAddress('photo@ingumbertozollo.it', 'Umberto Zollo Web Site');     // Add a recipient
       $mail->Subject = 'Contatto da sito web';
       //Content
       

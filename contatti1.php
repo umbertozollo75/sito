@@ -23,11 +23,11 @@
       <header class="header-head">
         <div class="header-container">
           
-          <div class="uz-navbar-wrap uz-navbar-wrap-new">
+          <div class="uz-navbar-wrap uz-navbar-wrap">
             <nav class="navbar navbar-expand-lg">
               <div class="uz-navbar-inner">
 
-                <div class="uz-navbar-panel uz-navbar-panel-left">
+                <div class="uz-navbar-panel uz-left">
                   <!-- RD Navbar Brand-->
                   <div class="brand">
                     <div class="brand-logo"><i class="fa fa-camera-retro fa-4x" aria-hidden="true"></i></div>
@@ -37,10 +37,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="uz-navbar-panel uz-navbar-panel-center">
+                <div class="uz-navbar-panel uz-center">
                   <?php include './social1.php'; ?>
                 </div>
-                <div class="uz-navbar-panel uz-navbar-panel-right">
+                <div class="uz-navbar-panel uz-right">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
